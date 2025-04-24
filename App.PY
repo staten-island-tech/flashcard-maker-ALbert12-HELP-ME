@@ -29,14 +29,6 @@ class Teacher(User):
     def display_info(self):
         return f"Teacher: {self.name}, Email: {self.email}, Subject: {self.subject}"
 
-# Student class
-class Student(User):
-    def __init__(self, name, email, student_id):
-        super().__init__(name, email)
-        self.student_id = student_id
-    
-    def display_info(self):
-        return f"Student: {self.name}, Email: {self.email}, Student ID: {self.student_id}"
 
 # Get input from user
 x = input("What is the question? ")
